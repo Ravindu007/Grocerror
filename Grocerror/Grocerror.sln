@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34018.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grocerror", "Grocerror.csproj", "{180056F2-1A35-43B2-8802-5B41F1705195}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Grocerror", "Grocerror.csproj", "{180056F2-1A35-43B2-8802-5B41F1705195}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grocerror.Models", "..\Grocerror.Models\Grocerror.Models.csproj", "{B1486143-D7B8-4940-ACD6-E42F44EC0715}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Grocerror.Models", "..\Grocerror.Models\Grocerror.Models.csproj", "{B1486143-D7B8-4940-ACD6-E42F44EC0715}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grocerror.Services", "..\Grocerror.Services\Grocerror.Services.csproj", "{F2E5FC77-A2F7-4DE2-8820-5A90454BFC67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Grocerror.Services", "..\Grocerror.Services\Grocerror.Services.csproj", "{F2E5FC77-A2F7-4DE2-8820-5A90454BFC67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grocerror.DataAccess", "..\Grocerror.DataAccess\Grocerror.DataAccess.csproj", "{902D8000-3763-4625-90C6-2EB04A15F7E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{F2E5FC77-A2F7-4DE2-8820-5A90454BFC67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2E5FC77-A2F7-4DE2-8820-5A90454BFC67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2E5FC77-A2F7-4DE2-8820-5A90454BFC67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{902D8000-3763-4625-90C6-2EB04A15F7E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{902D8000-3763-4625-90C6-2EB04A15F7E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{902D8000-3763-4625-90C6-2EB04A15F7E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{902D8000-3763-4625-90C6-2EB04A15F7E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
