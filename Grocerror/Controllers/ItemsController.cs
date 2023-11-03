@@ -9,11 +9,11 @@ namespace Grocerror.Controllers
     public class ItemsController : ControllerBase
     {
 
-        private ItemService _itemService;
+        private IItemRepository _itemService;
 
-        public ItemsController()
+        public ItemsController(IItemRepository repository)
         {
-            _itemService = new ItemService();
+            _itemService = repository;
         }
 
         [HttpGet]

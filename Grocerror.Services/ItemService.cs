@@ -7,9 +7,9 @@ using Grocerror.Models;
 
 namespace Grocerror.Services
 {
-    public class ItemService
+    public class ItemService : IItemRepository //implement the repository interface
     {
-        public List<Item> AllItems() //provides all items
+        public List<Item> AllItems() //provides all items => now this becomes a repository
         {
             var items = new List<Item>();
 
