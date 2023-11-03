@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Grocerror.DataAccess\Grocerror.DataAccess.csproj" />
     <ProjectReference Include="..\Grocerror.Models\Grocerror.Models.csproj" />
   </ItemGroup>
 

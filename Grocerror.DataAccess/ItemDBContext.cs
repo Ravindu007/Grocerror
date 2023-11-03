@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Grocerror.DataAccess
 {
-    internal class ItemDBContext : DbContext
+    public class ItemDBContext : DbContext
     {
         public DbSet<Item> Items { get; set; }
 
@@ -20,13 +20,25 @@ namespace Grocerror.DataAccess
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Item>().HasData(new Item
+            modelBuilder.Entity<Item>().HasData(new Item[]
             {
-                Id = 1,
-                ItemName = "Milk",
-                ListId = 1,
-                Date = DateTime.Now,
-                Status = ItemStatus.Got
+                new Item
+                {
+                    Id = 1,
+                    ItemName = "Milk from DB",
+                    ListId = 1,
+                    Date = DateTime.Now,
+                    Status = ItemStatus.Got
+                },
+                new Item
+                {
+                    Id = 2,
+                    ItemName = "Coffeee new from DB",
+                    ListId = 2,
+                    Date = DateTime.Now,
+                    Status = ItemStatus.Got
+                }
+                
             });
         }
     }
