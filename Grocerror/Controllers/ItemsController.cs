@@ -16,11 +16,21 @@ namespace Grocerror.Controllers
             _itemService = repository;
         }
 
-        [HttpGet]
+        [HttpGet("{id}")]
         public IActionResult GetAllItems()
         {
             var allItems = _itemService.AllItems();
             return Ok(allItems);
+        }
+
+        public IActionResult GetSingleItem(int id) 
+        {
+            var item = _itemService.SingleItem(id);
+            if(item == null)
+            {
+                return NotFound();
+            }
+            return Ok(item);
         }
     }
 }

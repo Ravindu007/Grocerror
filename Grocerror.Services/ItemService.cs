@@ -26,5 +26,10 @@ namespace Grocerror.Services
             return items ;
 
         }
+
+        public Item SingleItem(int id)
+        {
+            return null;
+        }
     }
 }

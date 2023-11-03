@@ -10,5 +10,7 @@ namespace Grocerror.Services
     public interface IItemRepository
     {
         public List<Item> AllItems();
+
+        public Item SingleItem(int id);
     }
 }
